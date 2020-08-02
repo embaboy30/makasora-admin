@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ArticlesRoutingModule } from './articles-routing.module';
 import { ArticlesComponent } from './articles.component';
 import { ArticleListComponent } from './article-list/article-list.component';
+import { NebularImportModule } from '../../shared/nebular-import/nebular-import.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ArticleListComponent } from './article-list/article-list.component';
   ],
   imports: [
     CommonModule,
-    ArticlesRoutingModule
-  ]
+    ArticlesRoutingModule,
+    NebularImportModule,
+  ],
 })
 export class ArticlesModule { }
