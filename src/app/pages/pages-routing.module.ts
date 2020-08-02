@@ -18,6 +18,11 @@ const routes: Routes = [{
         .then(m => m.ChartsModule),
     },
     {
+      path: 'articles',
+      loadChildren: () => import('./articles/articles.module')
+        .then(m => m.ArticlesModule),
+    },
+    {
       path: '',
       redirectTo: 'dashboard',
       pathMatch: 'full',

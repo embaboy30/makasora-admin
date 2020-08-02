@@ -6,6 +6,7 @@ import { PagesComponent } from './pages.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ECommerceModule } from './e-commerce/e-commerce.module';
+import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   imports: [
@@ -14,6 +15,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
     NbMenuModule,
     FormsModule,
     ECommerceModule,
+    ArticlesModule,
   ],
   declarations: [
     PagesComponent,
