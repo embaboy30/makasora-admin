@@ -13,11 +13,6 @@ const routes: Routes = [{
       component: ECommerceComponent,
     },
     {
-      path: 'charts',
-      loadChildren: () => import('./charts/charts.module')
-        .then(m => m.ChartsModule),
-    },
-    {
       path: 'articles',
       loadChildren: () => import('./articles/articles.module')
         .then(m => m.ArticlesModule),
